@@ -3,33 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="2Q Portfolio" />
-    <meta name ="keywords" content="2Q, Portfolio, Project, Web Development" />
-    <meta mame="author" content="sytherese" />
+    <title>ENHYPEN | Albums, Songs, and Lore</title>
+    <style>
+        
+        @font-face {
+            font-family: "Afacad";
+            src: url("../assets/Afacad-Regular.ttf") format("truetype");
+        }
 
-    <title>2Q Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <lik rel="icon" href="./assets/pshslogo.png" sizes="50x50" type="image/png" />
-    <script src="script.js" defer></script>
+        body {
+            margin: 0;
+            font-family: "Afacad", Verdana, sans-serif;
+            background-color: #0b0b0b;
+            color: #f2f2f2;
+            overflow-x: hidden;
+        }
 
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background: rgba(20, 20, 20, 0.6);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        header img {
+            height: 50px;
+            width: 50px;
+        }
+
+        nav a {
+            color: #f2f2f2;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #9c89f7;
+        }
+
+        .hero {
+            width: 100%;
+            height: 400px;
+            background-image: url("../assets/enhypenDu.png"); 
+            background-size: cover;
+            background-position: center;
+            filter: brightness(90%);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            color: #cfc8ff;
+            font-size: 2.5em;
+        }
+
+        .enhypen-desc {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 60px;
+            text-align: center;
+            font-family: Verdana, sans-serif;
+            font-size: 1rem;
+            color: white;
+            line-height: 1.6;
+            }
+
+        table {
+            width: 85%;
+            margin: 50px auto;
+            border-collapse: collapse;
+            background-color: rgba(30, 30, 30, 0.7);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #3a3a3a;
+            padding: 20px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 1.5;
+        }
+
+        th {
+            background-color: rgba(60, 60, 60, 0.8);
+            color: #ffffff;
+            font-size: 1.2em;
+        }
+
+        td {
+            font-size: 1em;
+            color: #e6e6e6;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(40, 40, 40, 0.5);
+        }
+
+        tr:hover {
+            background-color: rgba(80, 80, 80, 0.6);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            font-size: 0.9em;
+            border-top: 1px solid #222;
+            margin-top: 60px;
+        }
+    </style>
 </head>
 
-
 <body>
-<h1>A Guide To Enhypen</h1>
-<h2>by Mg08, Mg07, Mg27, Mg30</h2>
+    <header>
+        <div>
+            <img src="../assets/pshslogo.png" alt="pshs logo" title="pshs logo"/>
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="http://127.0.0.1:5500/public/main_page.html">Main Page</a>
+        </nav>
+    </header>
 
-<br>
-<h2>Note: ENHYPEN's lore is somewhat open to interpretation, much of their lore is from music videos, concept films, teasers, lyrics, and statements. So, here's a long narrative and list of their albums, songs, and the lore behind them.</h2>
-<table>
-    <caption><b>Lore of Albums and Songs</b></caption>
-    <tr>
-        <th>Album</th>
-        <th>Concept / Theme</th>
-        <th>Songs and Lore Meanings</th>
-    </tr>
+    <div class="hero"></div>
 
-    <tr>
+    <h1>ENHYPEN Albums | Songs | Lore</h1>
+
+    <p class="enhypen-desc">
+    Through the curse of blood, through vampire nights, through memory, confessions, and risks—
+    the lore becomes a story of not just darkness, but of longing, choice, and transformation.
+    These vampires are not passive victims; they fight for love, and for a future beyond fate.
+    Like the joke in the fandom, they are yearners.
+  </p>
+
+
+    <table>
+        <tr>
+            <th>Album</th>
+            <th>Concept / Theme</th>
+            <th>Key Songs & Lore Meanings</th>
+        </tr>
+
+            <tr>
         <td><b>BORDER: DAY ONE</b></td>
         <td>Their story begins with the border, a symbol for the boundary between what was and what will be: between the known past and unknown future. In this album, the seven boys find themselves at the threshold. They have just survived I-Land, a trial of competition and growth, and will not be facing the first day of "crossing that border" into their new lives. Visually and thematically, the albums uses dual concepts of dawk and dusk--light and dark, beginnings and endings.</td>
         <td>
@@ -148,8 +274,11 @@
             <b>5. Helium</b> - This is the lightness and uplifting. In lore sense, helium is the fleeting moment of weightlessness in love. A respite from gravity, and darkness. Desire lifts them, even if temporarily, above the heavy curse.<br>
             <b>6. Too close</b> - Too close, and the curse may harm; too far, and their love is lost. They balance on that edge. In narrative, this track may represent the final push, or the final test--can love survive when they are too close to darkness<br>
     </tr>
-<h3>Through the curse of blood, through vampire nights, through memory, confessions, and risks--the lore becomes a story of not just darkness, but of longing, choice, and transformation. These vampires are not passive victims; they fight for love, and for a future beyond fate. Like the joke in the fandom, they are yearners.</h3>
 
+    </table>
 
-</table>
+    <footer>
+        © 2025 TA Sy | 2Q | ENHYPEN Website
+    </footer>
 </body>
+</html>
