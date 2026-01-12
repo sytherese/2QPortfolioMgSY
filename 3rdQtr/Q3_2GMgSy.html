@@ -7,39 +7,48 @@
 <style>
     body {
         font-family: Arial, sans-serif;
-        background-color: #f4f6f8;
+        background-color: #fdecef;
         padding: 20px;
     }
 
     form {
         max-width: 600px;
         margin: auto;
-        background: white;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        background: #fff7f9;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 0 12px rgba(255, 182, 193, 0.4);
     }
 
     fieldset {
         margin-bottom: 20px;
-        border: 1px solid #ccc;
-        padding: 15px;
+        border: 1.5px solid #f4b6c2;
+        padding: 18px;
+        border-radius: 10px;
+        background-color: #fff;
     }
 
     legend {
         font-weight: bold;
+        color: #c94a6a;
+        padding: 0 8px;
     }
 
     label {
         display: block;
-        margin-bottom: 12px;
+        margin-bottom: 14px;
+        color: #5c2a3a;
+        font-size: 14px;
     }
 
     input, select, textarea {
         width: 100%;
-        padding: 8px;
-        margin-top: 5px;
+        padding: 9px;
+        margin-top: 6px;
         box-sizing: border-box;
+        border-radius: 6px;
+        border: 1px solid #f2a7b5;
+        font-size: 14px;
     }
 
     textarea {
@@ -47,26 +56,39 @@
     }
 
     .error {
-        border: 2px solid red;
-        background-color: #ffecec;
+        border: 2px solid #e63946;
+        background-color: #ffe6ea;
     }
 
     input:focus, select:focus, textarea:focus {
         outline: none;
-        border: 2px solid #007BFF;
-        background-color: #eef6ff;
+        border: 2px solid #f48fb1;
+        background-color: #fff0f5;
     }
 
     .buttons {
         text-align: center;
+        margin-top: 10px;
     }
 
     .buttons input {
-        width: 120px;
+        width: 130px;
         margin: 10px;
         padding: 10px;
+        border-radius: 20px;
+        border: none;
+        background-color: #f4a6b8;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .buttons input:hover {
+        background-color: #e8899f;
     }
 </style>
+
 
 <script>
     function confirmSubmit() {
